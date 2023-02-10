@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+@layer components {
+  .infoText {
+    @apply p-4 flex items-center rounded-lg max-w-[300px] h-[80px] shadow-xl font-medium text-sm;
+  }
+  .examplesInfo {
+    @apply bg-blue-600;
+  }
+  .limitationsInfo {
+    @apply bg-green-600;
+  }
+  .capabilitiesInfo {
+    @apply bg-purple-600;
+  }
+  .chatRow{
+    @apply rounded-lg px-5 py-3 text-xs flex items-center justify-center space-x-2 hover:bg-gray-700/70 cursor-pointer text-gray-300 transition-all  
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: royalblue; 
+  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(65, 105, 225, 0.603); 
+}
